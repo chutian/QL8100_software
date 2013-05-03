@@ -1,0 +1,45 @@
+[Global]
+CurrentProject=QL8100_softwar.vpj
+[ProjectDates]
+QL8100_softwar.vpj=20130415125643104
+[ActiveConfig]
+QL8100_softwar.vpj=Debug
+[TreeExpansion2]
+- QL8100_softwar.vpj
+  + Debug
+  + lib_stm8
+    + inc
+    + src
+  + Release
+scroll:0
+[State]
+SCREEN: 1366 768 125 125 1025 526 0 0 M 0 0 0 0 1339 578 0
+CWD: \work\qiu_work\QL8100\QL8100_software
+BUFFER: BN="public.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=608 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.127 CL=31 LE=0 CX=31 CY=6 WI=5 BI=7 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="group.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=544 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.106 CL=1 LE=0 CX=1 CY=7 WI=5 BI=4 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 1037 404 -1 -1 N  WF=0 WT=1 ",,,"
+BUFFER: BN="public.h"
+VIEW: LN=.127 CL=31 LE=0 CX=35 CY=6 WI=15 BI=7 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 25 1037 404 -1 -1 M  WF=0 WT=3 ",,,"
+BUFFER: BN="group.h"
+VIEW: LN=.110 CL=7 LE=0 CX=11 CY=9 WI=17 BI=4 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\standard_display.c
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\inc\group.h
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\testing_process.c
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\total_voltage_test.c
+..\..\..\bq_work\Protection_board_detector\trunk\software_os\jiancheyi_os.vpw
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\test4850fun.c
+..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\menu_top.c
+group.h
+public.h
+DEBUG: 0 0 0 0 3 0 gdb
+printf
+strcpy
+std::*
+DEBUG2: 0
+TBCLASS: 0 0
