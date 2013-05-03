@@ -3323,6 +3323,7 @@ UART3_SR_TXE	lib_stm8\inc\stm8s.h	1993;"	macro
 UART3_TX_IRQHandler	stm8s_it.h	91;"	prototype	signature:(void)
 UART3_TypeDef	lib_stm8\inc\stm8s.h	1970;"	typedef	typeref:struct:UART3_struct
 UART3_struct	lib_stm8\inc\stm8s.h	1957;"	struct
+UART_BUAD	public.h	4;"	macro
 UART_PORT	hardware_port.h	108;"	macro
 UART_RX_PIN	hardware_port.h	113;"	macro
 UART_RX_PORT	hardware_port.h	112;"	macro
@@ -3361,7 +3362,7 @@ __GROUP_H	group.h	2;"	macro
 __HARDWARE_PORT_H	hardware_port.h	2;"	macro
 __I	lib_stm8\inc\stm8s.h	194;"	macro
 __IO	lib_stm8\inc\stm8s.h	196;"	macro
-__MODS0__	d:\stmicroelectronics\cosmic\cxstm8\hstm8\mods0.h	11;"	macro
+__MODS0__	d:\stmicroelectronics\cosmic\cxstm8_32k\hstm8\mods0.h	11;"	macro
 __O	lib_stm8\inc\stm8s.h	195;"	macro
 __PUBLIC_H	public.h	2;"	macro
 __STM8S_ADC1_H	lib_stm8\inc\stm8s_adc1.h	23;"	macro
@@ -3403,11 +3404,11 @@ disableInterrupts	lib_stm8\inc\stm8s.h	2621;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2601;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2610;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2620;"	macro
-gpio_init	public.h	6;"	prototype	signature:(void)
+gpio_init	public.h	8;"	prototype	signature:(void)
 halt	lib_stm8\inc\stm8s.h	2608;"	macro
 halt	lib_stm8\inc\stm8s.h	2617;"	macro
 halt	lib_stm8\inc\stm8s.h	2627;"	macro
-hardware_init	public.h	5;"	prototype	signature:(void)
+hardware_init	public.h	7;"	prototype	signature:(void)
 int16_t	lib_stm8\inc\stm8s.h	200;"	typedef
 int32_t	lib_stm8\inc\stm8s.h	201;"	typedef
 int8_t	lib_stm8\inc\stm8s.h	199;"	typedef
@@ -3428,14 +3429,15 @@ s8	lib_stm8\inc\stm8s.h	212;"	typedef
 sim	lib_stm8\inc\stm8s.h	2604;"	macro
 sim	lib_stm8\inc\stm8s.h	2613;"	macro
 sim	lib_stm8\inc\stm8s.h	2623;"	macro
-software_init	public.h	4;"	prototype	signature:(void)
+software_init	public.h	6;"	prototype	signature:(void)
 trap	lib_stm8\inc\stm8s.h	2606;"	macro
 trap	lib_stm8\inc\stm8s.h	2615;"	macro
 trap	lib_stm8\inc\stm8s.h	2625;"	macro
 u16	lib_stm8\inc\stm8s.h	215;"	typedef
 u32	lib_stm8\inc\stm8s.h	214;"	typedef
 u8	lib_stm8\inc\stm8s.h	216;"	typedef
-uart_init	public.h	7;"	prototype	signature:(uint16_t uiBuad)
+uart_init	public.c	3;"	function	signature:(uint16_t uiBuad)
+uart_init	public.h	9;"	prototype	signature:(uint16_t uiBuad)
 uint16_t	lib_stm8\inc\stm8s.h	205;"	typedef
 uint32_t	lib_stm8\inc\stm8s.h	206;"	typedef
 uint8_t	lib_stm8\inc\stm8s.h	204;"	typedef

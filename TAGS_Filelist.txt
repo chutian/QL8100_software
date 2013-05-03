@@ -44,4 +44,4 @@ lib_stm8\inc\stm8s.h
 public.h
 stm8s_conf.h
 stm8s_it.h
-d:\stmicroelectronics\cosmic\cxstm8\hstm8\mods0.h
+d:\stmicroelectronics\cosmic\cxstm8_32k\hstm8\mods0.h

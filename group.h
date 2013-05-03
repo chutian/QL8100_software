@@ -3,7 +3,7 @@
 
 #include "stm8s.h"
 
-#include "hardware.h"
+#include "hardware_port.h"
 #include "public.h"
 
 
