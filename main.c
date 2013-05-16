@@ -14,7 +14,7 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm8s.h"
-
+#include "group.h"
 
 bool ButtonPressed = FALSE;
 /* Private function prototypes -----------------------------------------------*/

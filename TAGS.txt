@@ -254,8 +254,10 @@ BEEP_PIN	hardware_port.h	106;"	macro
 BEEP_PORT	hardware_port.h	105;"	macro
 BEEP_TypeDef	lib_stm8\inc\stm8s.h	468;"	typedef	typeref:struct:BEEP_struct
 BEEP_struct	lib_stm8\inc\stm8s.h	464;"	struct
+BIT	group.h	12;"	typedef
 BIT_MASK	lib_stm8\src\stm8s_wwdg.c	29;"	macro	file:
 BKR	lib_stm8\inc\stm8s.h	627;"	member	struct:TIM1_struct
+BOOL	group.h	13;"	typedef
 BRR1	lib_stm8\inc\stm8s.h	1755;"	member	struct:UART1_struct
 BRR1	lib_stm8\inc\stm8s.h	1853;"	member	struct:UART2_struct
 BRR1	lib_stm8\inc\stm8s.h	1961;"	member	struct:UART3_struct
@@ -1309,7 +1311,7 @@ INTERRUPT_HANDLER	lib_stm8\inc\stm8s.h	2645;"	macro
 INTERRUPT_HANDLER_TRAP	lib_stm8\inc\stm8s.h	2634;"	macro
 INTERRUPT_HANDLER_TRAP	lib_stm8\inc\stm8s.h	2639;"	macro
 INTERRUPT_HANDLER_TRAP	lib_stm8\inc\stm8s.h	2648;"	macro
-INTERRUPT_HANDLER_TRAP	stm8s_it.c	58;"	function
+INTERRUPT_HANDLER_TRAP	stm8s_it.c	59;"	function
 IN_RAM	lib_stm8\inc\stm8s.h	159;"	macro
 IN_RAM	lib_stm8\inc\stm8s.h	161;"	macro
 IN_RAM	lib_stm8\inc\stm8s.h	163;"	macro
@@ -1767,10 +1769,13 @@ RXCRCR	lib_stm8\inc\stm8s.h	1688;"	member	struct:SPI_struct
 Reserved1	lib_stm8\inc\stm8s.h	2181;"	member	struct:__anon142::__anon143::__anon149
 Reserved2	lib_stm8\inc\stm8s.h	2187;"	member	struct:__anon142::__anon143::__anon149
 RxFIFO	lib_stm8\inc\stm8s.h	2210;"	member	union:__anon142::__anon143	typeref:struct:__anon142::__anon143::__anon150
+S16	group.h	6;"	typedef
 S16_MAX	lib_stm8\inc\stm8s.h	232;"	macro
 S16_MIN	lib_stm8\inc\stm8s.h	233;"	macro
+S32	group.h	8;"	typedef
 S32_MAX	lib_stm8\inc\stm8s.h	235;"	macro
 S32_MIN	lib_stm8\inc\stm8s.h	236;"	macro
+S8	group.h	4;"	typedef
 S8_MAX	lib_stm8\inc\stm8s.h	229;"	macro
 S8_MIN	lib_stm8\inc\stm8s.h	230;"	macro
 SET	lib_stm8\inc\stm8s.h	221;"	enumerator	enum:__anon139
@@ -3024,8 +3029,11 @@ TRUE	lib_stm8\inc\stm8s.h	219;"	enumerator	enum:__anon138
 TSR	lib_stm8\inc\stm8s.h	2054;"	member	struct:__anon142
 TXCRCR	lib_stm8\inc\stm8s.h	1689;"	member	struct:SPI_struct
 TxMailbox	lib_stm8\inc\stm8s.h	2082;"	member	union:__anon142::__anon143	typeref:struct:__anon142::__anon143::__anon144
+U16	group.h	7;"	typedef
 U16_MAX	lib_stm8\inc\stm8s.h	231;"	macro
+U32	group.h	9;"	typedef
 U32_MAX	lib_stm8\inc\stm8s.h	234;"	macro
+U8	group.h	5;"	typedef
 U8_MAX	lib_stm8\inc\stm8s.h	228;"	macro
 UART1	lib_stm8\inc\stm8s.h	2549;"	macro
 UART1_BRR1_DIVM	lib_stm8\inc\stm8s.h	1799;"	macro
@@ -3323,7 +3331,10 @@ UART3_SR_TXE	lib_stm8\inc\stm8s.h	1993;"	macro
 UART3_TX_IRQHandler	stm8s_it.h	91;"	prototype	signature:(void)
 UART3_TypeDef	lib_stm8\inc\stm8s.h	1970;"	typedef	typeref:struct:UART3_struct
 UART3_struct	lib_stm8\inc\stm8s.h	1957;"	struct
-UART_BUAD	public.h	4;"	macro
+UART_BUAD	use_uart.h	4;"	macro
+UART_BUFFER_EOF	use_uart.h	8;"	macro
+UART_BUFFER_SIZE	use_uart.h	6;"	macro
+UART_BUFFER_TOP	use_uart.h	7;"	macro
 UART_PORT	hardware_port.h	108;"	macro
 UART_RX_PIN	hardware_port.h	113;"	macro
 UART_RX_PORT	hardware_port.h	112;"	macro
@@ -3362,7 +3373,7 @@ __GROUP_H	group.h	2;"	macro
 __HARDWARE_PORT_H	hardware_port.h	2;"	macro
 __I	lib_stm8\inc\stm8s.h	194;"	macro
 __IO	lib_stm8\inc\stm8s.h	196;"	macro
-__MODS0__	d:\stmicroelectronics\cosmic\cxstm8_32k\hstm8\mods0.h	11;"	macro
+__MODS0__	d:\stmicroelectronics\cosmic\cxstm8\hstm8\mods0.h	11;"	macro
 __O	lib_stm8\inc\stm8s.h	195;"	macro
 __PUBLIC_H	public.h	2;"	macro
 __STM8S_ADC1_H	lib_stm8\inc\stm8s_adc1.h	23;"	macro
@@ -3391,6 +3402,8 @@ __STM8S_TIM3_H	lib_stm8\inc\stm8s_tim3.h	24;"	macro
 __STM8S_TIM4_H	lib_stm8\inc\stm8s_tim4.h	24;"	macro
 __STM8S_UART2_H	lib_stm8\inc\stm8s_uart2.h	24;"	macro
 __STM8S_WWDG_H	lib_stm8\inc\stm8s_wwdg.h	24;"	macro
+__USE_GPIO_H	use_gpio.h	2;"	macro
+__USE_UART_H	use_uart.h	2;"	macro
 _stext	stm8s_it.h	34;"	prototype	signature:(void)
 _vectab	stm8_interrupt_vector.c	14;"	variable
 assert_failed	main.c	187;"	function	signature:(uint8_t* file, uint32_t line)
@@ -3404,11 +3417,15 @@ disableInterrupts	lib_stm8\inc\stm8s.h	2621;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2601;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2610;"	macro
 enableInterrupts	lib_stm8\inc\stm8s.h	2620;"	macro
-gpio_init	public.h	8;"	prototype	signature:(void)
+gpio_init	use_gpio.c	3;"	function	signature:(void)
+gpio_init	use_gpio.h	4;"	prototype	signature:(void)
+gucUartBuffer	use_uart.c	3;"	variable
+gucUartBufferTail	use_uart.c	4;"	variable
 halt	lib_stm8\inc\stm8s.h	2608;"	macro
 halt	lib_stm8\inc\stm8s.h	2617;"	macro
 halt	lib_stm8\inc\stm8s.h	2627;"	macro
-hardware_init	public.h	7;"	prototype	signature:(void)
+hardware_init	public.c	3;"	function	signature:(void)
+hardware_init	public.h	5;"	prototype	signature:(void)
 int16_t	lib_stm8\inc\stm8s.h	200;"	typedef
 int32_t	lib_stm8\inc\stm8s.h	201;"	typedef
 int8_t	lib_stm8\inc\stm8s.h	199;"	typedef
@@ -3429,15 +3446,21 @@ s8	lib_stm8\inc\stm8s.h	212;"	typedef
 sim	lib_stm8\inc\stm8s.h	2604;"	macro
 sim	lib_stm8\inc\stm8s.h	2613;"	macro
 sim	lib_stm8\inc\stm8s.h	2623;"	macro
-software_init	public.h	6;"	prototype	signature:(void)
+software_init	public.h	4;"	prototype	signature:(void)
 trap	lib_stm8\inc\stm8s.h	2606;"	macro
 trap	lib_stm8\inc\stm8s.h	2615;"	macro
 trap	lib_stm8\inc\stm8s.h	2625;"	macro
 u16	lib_stm8\inc\stm8s.h	215;"	typedef
 u32	lib_stm8\inc\stm8s.h	214;"	typedef
 u8	lib_stm8\inc\stm8s.h	216;"	typedef
-uart_init	public.c	3;"	function	signature:(uint16_t uiBuad)
-uart_init	public.h	9;"	prototype	signature:(uint16_t uiBuad)
+uart_init	use_uart.c	6;"	function	signature:(uint16_t uiBuad)
+uart_init	use_uart.h	13;"	prototype	signature:(uint16_t uiBuad)
+uart_init_buff	use_uart.c	14;"	function	signature:(void)
+uart_init_buff	use_uart.h	14;"	prototype	signature:(void)
+uart_isr	use_uart.c	33;"	function	signature:(void)
+uart_isr	use_uart.h	16;"	prototype	signature:(void)
+uart_put_string	use_uart.c	23;"	function	signature:(u32 ulLen, u8 *ucData)
+uart_put_string	use_uart.h	15;"	prototype	signature:(u32 ulLen, u8 *ucData)
 uint16_t	lib_stm8\inc\stm8s.h	205;"	typedef
 uint32_t	lib_stm8\inc\stm8s.h	206;"	typedef
 uint8_t	lib_stm8\inc\stm8s.h	204;"	typedef

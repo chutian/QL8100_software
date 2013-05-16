@@ -1,42 +1,102 @@
 [Global]
 CurrentProject=QL8100_softwar.vpj
 [ProjectDates]
-QL8100_softwar.vpj=20130415125643104
+QL8100_softwar.vpj=20130505091254794
 [ActiveConfig]
 QL8100_softwar.vpj=Debug
 [TreeExpansion2]
 - QL8100_softwar.vpj
-  + Debug
   + lib_stm8
     + inc
     + src
+  + ql8100_software_Programmer
   + Release
 scroll:0
 [State]
 SCREEN: 1366 768 125 125 1025 526 0 0 M 0 0 0 0 1339 578 0
 CWD: \work\qiu_work\QL8100\QL8100_software
+BUFFER: BN="lib_stm8\inc\stm8s.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.8847 CL=36 LE=0 CX=36 CY=13 WI=5 BI=9 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="stm8s_it.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.10313 CL=16 LE=0 CX=16 CY=19 WI=5 BI=10 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="use_uart.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.75 CL=25 LE=0 CX=25 CY=5 WI=5 BI=11 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="use_uart.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.292 CL=45 LE=0 CX=45 CY=10 WI=5 BI=12 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="lib_stm8\inc\stm8s_gpio.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=1 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.2790 CL=3 LE=0 CX=3 CY=16 WI=5 BI=13 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="lib_stm8\src\stm8s_uart2.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=1 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.16480 CL=27 LE=0 CX=27 CY=9 WI=5 BI=14 HT=0 HN=0 HF=0 HC=4
 BUFFER: BN="public.h"
-BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=608 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
-VIEW: LN=.127 CL=31 LE=0 CX=31 CY=6 WI=5 BI=7 HT=0 HN=0 HF=0 HC=4
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.77 CL=1 LE=0 CX=1 CY=4 WI=5 BI=15 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="public.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.69 CL=5 LE=0 CX=5 CY=5 WI=5 BI=16 HT=0 HN=0 HF=0 HC=4
 BUFFER: BN="group.h"
-BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=544 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
-VIEW: LN=.106 CL=1 LE=0 CX=1 CY=7 WI=5 BI=4 HT=0 HN=0 HF=0 HC=4
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.688 CL=26 LE=0 CX=26 CY=19 WI=5 BI=17 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="use_gpio.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.100 CL=30 LE=0 CX=30 CY=5 WI=5 BI=18 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="hardware_port.h"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=0 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.1987 CL=24 LE=0 CX=24 CY=15 WI=5 BI=19 HT=0 HN=0 HF=0 HC=4
+BUFFER: BN="use_gpio.c"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C/C++	HM=0 MF=608 TL=0 MLL=0 ASE=0 LNL=1 LCF=6 CAPS=0 E=0 ESBU2=1 CL="" SC="" SCE= SCU=
+VIEW: LN=.890 CL=32 LE=0 CX=32 CY=13 WI=5 BI=20 HT=0 HN=0 HF=0 HC=4
+WINDOW: 40 50 1037 404 -1 -1 N  WF=0 WT=7 ",,,"
+BUFFER: BN="lib_stm8\inc\stm8s.h"
+VIEW: LN=.8847 CL=36 LE=0 CX=41 CY=13 WI=75 BI=9 HT=0 HN=0 HF=0 HC=4
+WINDOW: 60 75 1037 404 -1 -1 N  WF=0 WT=8 ",,,"
+BUFFER: BN="stm8s_it.c"
+VIEW: LN=.10313 CL=16 LE=0 CX=21 CY=19 WI=77 BI=10 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 25 1037 404 -1 -1 N  WF=0 WT=6 ",,,"
+BUFFER: BN="use_uart.h"
+VIEW: LN=.75 CL=25 LE=0 CX=29 CY=5 WI=79 BI=11 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 1037 404 -1 -1 N  WF=0 WT=5 ",,,"
+BUFFER: BN="use_uart.c"
+VIEW: LN=.292 CL=45 LE=0 CX=49 CY=10 WI=81 BI=12 HT=0 HN=0 HF=0 HC=4
+WINDOW: 140 0 1037 404 -1 -1 N  WF=0 WT=12 ",,,"
+BUFFER: BN="lib_stm8\inc\stm8s_gpio.h"
+VIEW: LN=.2790 CL=3 LE=0 CX=7 CY=16 WI=83 BI=13 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 25 1037 404 -1 -1 N  WF=0 WT=4 ",,,"
+BUFFER: BN="lib_stm8\src\stm8s_uart2.c"
+VIEW: LN=.16480 CL=27 LE=0 CX=32 CY=9 WI=85 BI=14 HT=0 HN=0 HF=0 HC=4
 WINDOW: 0 0 1037 404 -1 -1 N  WF=0 WT=1 ",,,"
 BUFFER: BN="public.h"
-VIEW: LN=.127 CL=31 LE=0 CX=35 CY=6 WI=15 BI=7 HT=0 HN=0 HF=0 HC=4
-WINDOW: 20 25 1037 404 -1 -1 M  WF=0 WT=3 ",,,"
+VIEW: LN=.77 CL=1 LE=0 CX=5 CY=4 WI=87 BI=15 HT=0 HN=0 HF=0 HC=4
+WINDOW: 0 0 1037 404 -1 -1 N  WF=0 WT=2 ",,,"
+BUFFER: BN="public.c"
+VIEW: LN=.69 CL=5 LE=0 CX=9 CY=5 WI=89 BI=16 HT=0 HN=0 HF=0 HC=4
+WINDOW: 20 25 1037 404 -1 -1 N  WF=0 WT=3 ",,,"
 BUFFER: BN="group.h"
-VIEW: LN=.110 CL=7 LE=0 CX=11 CY=9 WI=17 BI=4 HT=0 HN=0 HF=0 HC=4
+VIEW: LN=.688 CL=26 LE=0 CX=30 CY=19 WI=91 BI=17 HT=0 HN=0 HF=0 HC=4
+WINDOW: 80 100 1037 404 -1 -1 N  WF=0 WT=9 ",,,"
+BUFFER: BN="use_gpio.h"
+VIEW: LN=.100 CL=30 LE=0 CX=34 CY=5 WI=93 BI=18 HT=0 HN=0 HF=0 HC=4
+WINDOW: 120 150 1037 404 -1 -1 N  WF=0 WT=11 ",,,"
+BUFFER: BN="hardware_port.h"
+VIEW: LN=.1987 CL=24 LE=0 CX=28 CY=15 WI=95 BI=19 HT=0 HN=0 HF=0 HC=4
+WINDOW: 100 125 1037 404 -1 -1 M  WF=0 WT=10 ",,,"
+BUFFER: BN="use_gpio.c"
+VIEW: LN=.983 CL=1 LE=0 CX=5 CY=14 WI=97 BI=20 HT=0 HN=0 HF=0 HC=4
 FILEHIST: 9
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\standard_display.c
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\inc\group.h
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\testing_process.c
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\total_voltage_test.c
-..\..\..\bq_work\Protection_board_detector\trunk\software_os\jiancheyi_os.vpw
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\test4850fun.c
-..\..\..\bq_work\Protection_board_detector\trunk\software_os4850\src\menu_top.c
-group.h
+use_uart.h
 public.h
+use_uart.c
+hardware_port.h
+lib_stm8\inc\stm8s_gpio.h
+public.c
+group.h
+use_gpio.h
+use_gpio.c
 DEBUG: 0 0 0 0 3 0 gdb
 printf
 strcpy
