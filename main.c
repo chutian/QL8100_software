@@ -35,9 +35,10 @@ void main(void)
 		disableInterrupts();			//πÿ÷–∂œ
     /* Clock configuration -----------------------------------------*/
     CLK_Config();
+    hardware_init();
 
     /* GPIO Configuration ------------------------------------------*/
-    GPIO_Config();
+    //GPIO_Config();
 
     /* BEEP calibration */
     BEEP_LSICalibrationConfig(LSIMeasurment());
@@ -47,8 +48,13 @@ void main(void)
 
     while (1)
     {
-			GPIO_WriteReverse(GPIOD,GPIO_PIN_2);
-			Delay(10000000);
+			//GPIO_WriteReverse(GPIOD,GPIO_PIN_2);
+        ctrl_touch_power(ON);
+        ctrl_power(ON);
+		Delay(10000000);
+        ctrl_touch_power(OFF);
+        ctrl_power(OFF);
+		Delay(10000000);
     }
 
 }

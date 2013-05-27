@@ -512,7 +512,7 @@ CLK_ClockSwitchCmd	lib_stm8\src\stm8s_clk.c	218;"	function	signature:(Functional
 CLK_ClockSwitchConfig	lib_stm8\inc\stm8s_clk.h	355;"	prototype	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
 CLK_ClockSwitchConfig	lib_stm8\src\stm8s_clk.c	319;"	function	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
 CLK_Config	main.c	21;"	prototype	file:	signature:(void)
-CLK_Config	main.c	61;"	function	file:	signature:(void)
+CLK_Config	main.c	64;"	function	file:	signature:(void)
 CLK_CurrentClockState_TypeDef	lib_stm8\inc\stm8s_clk.h	50;"	typedef	typeref:enum:__anon12
 CLK_DeInit	lib_stm8\inc\stm8s_clk.h	346;"	prototype	signature:(void)
 CLK_DeInit	lib_stm8\src\stm8s_clk.c	66;"	function	signature:(void)
@@ -771,7 +771,7 @@ DRL	lib_stm8\inc\stm8s.h	310;"	member	struct:ADC1_struct
 DRL	lib_stm8\inc\stm8s.h	381;"	member	struct:ADC2_struct
 DTR	lib_stm8\inc\stm8s.h	628;"	member	struct:TIM1_struct
 DUKR	lib_stm8\inc\stm8s.h	1510;"	member	struct:FLASH_struct
-Delay	main.c	169;"	function	signature:(uint16_t nCount)
+Delay	main.c	172;"	function	signature:(uint16_t nCount)
 Delay	main.c	23;"	prototype	file:	signature:(uint16_t nCount)
 ECKR	lib_stm8\inc\stm8s.h	495;"	member	struct:CLK_struct
 EEPROM	lib_stm8\inc\stm8s.h	115;"	macro
@@ -1054,7 +1054,7 @@ GPIOI_BaseAddress	lib_stm8\inc\stm8s.h	2455;"	macro
 GPIO_CR1_RESET_VALUE	lib_stm8\inc\stm8s.h	269;"	macro
 GPIO_CR2_RESET_VALUE	lib_stm8\inc\stm8s.h	270;"	macro
 GPIO_Config	main.c	22;"	prototype	file:	signature:(void)
-GPIO_Config	main.c	73;"	function	file:	signature:(void)
+GPIO_Config	main.c	76;"	function	file:	signature:(void)
 GPIO_DDR_RESET_VALUE	lib_stm8\inc\stm8s.h	268;"	macro
 GPIO_DeInit	lib_stm8\inc\stm8s_gpio.h	133;"	prototype	signature:(GPIO_TypeDef* GPIOx)
 GPIO_DeInit	lib_stm8\src\stm8s_gpio.c	47;"	function	signature:(GPIO_TypeDef* GPIOx)
@@ -1106,6 +1106,7 @@ GPIO_WriteReverse	lib_stm8\src\stm8s_gpio.c	174;"	function	signature:(GPIO_TypeD
 GPIO_struct	lib_stm8\inc\stm8s.h	253;"	struct
 GTR	lib_stm8\inc\stm8s.h	1762;"	member	struct:UART1_struct
 GTR	lib_stm8\inc\stm8s.h	1861;"	member	struct:UART2_struct
+HIGH	group.h	34;"	macro
 HSE_VALUE	lib_stm8\inc\stm8s.h	101;"	macro
 HSE_VALUE	lib_stm8\inc\stm8s.h	99;"	macro
 HSIDivFactor	lib_stm8\src\stm8s_clk.c	42;"	variable
@@ -1625,8 +1626,9 @@ LED_STCP_PIN	hardware_port.h	59;"	macro
 LED_STCP_PORT	hardware_port.h	58;"	macro
 LER_PIN	hardware_port.h	17;"	macro
 LER_PORT	hardware_port.h	16;"	macro
+LOW	group.h	38;"	macro
 LSIMeasurment	main.c	24;"	prototype	file:	signature:(void)
-LSIMeasurment	main.c	86;"	function	signature:(void)
+LSIMeasurment	main.c	89;"	function	signature:(void)
 LSI_FREQUENCY_MAX	lib_stm8\inc\stm8s_awu.h	71;"	macro
 LSI_FREQUENCY_MAX	lib_stm8\inc\stm8s_beep.h	58;"	macro
 LSI_FREQUENCY_MIN	lib_stm8\inc\stm8s_awu.h	70;"	macro
@@ -1690,7 +1692,9 @@ NonHandledInterrupt	stm8s_it.h	35;"	prototype	signature:(void)
 OARH	lib_stm8\inc\stm8s.h	1318;"	member	struct:I2C_struct
 OARL	lib_stm8\inc\stm8s.h	1317;"	member	struct:I2C_struct
 ODR	lib_stm8\inc\stm8s.h	255;"	member	struct:GPIO_struct
+OFF	group.h	30;"	macro
 OISR	lib_stm8\inc\stm8s.h	629;"	member	struct:TIM1_struct
+ON	group.h	26;"	macro
 OPERATION_TIMEOUT	lib_stm8\src\stm8s_flash.c	65;"	macro	file:
 OPT	lib_stm8\inc\stm8s.h	2514;"	macro
 OPT0	lib_stm8\inc\stm8s.h	1570;"	member	struct:OPT_struct
@@ -3406,11 +3410,25 @@ __USE_GPIO_H	use_gpio.h	2;"	macro
 __USE_UART_H	use_uart.h	2;"	macro
 _stext	stm8s_it.h	34;"	prototype	signature:(void)
 _vectab	stm8_interrupt_vector.c	14;"	variable
-assert_failed	main.c	187;"	function	signature:(uint8_t* file, uint32_t line)
+assert_failed	main.c	190;"	function	signature:(uint8_t* file, uint32_t line)
 assert_failed	stm8s_conf.h	99;"	prototype	signature:(uint8_t* file, uint32_t line)
 assert_param	stm8s_conf.h	101;"	macro
 assert_param	stm8s_conf.h	97;"	macro
 bool	lib_stm8\inc\stm8s.h	219;"	typedef	typeref:enum:__anon138
+ctrl_card_power	use_gpio.c	96;"	function	signature:(u8 ON_OFF)
+ctrl_card_power	use_gpio.h	11;"	prototype	signature:(u8 ON_OFF)
+ctrl_led16	use_gpio.c	48;"	function	signature:(u8 ON_OFF)
+ctrl_led16	use_gpio.h	7;"	prototype	signature:(u8 ON_OFF)
+ctrl_led17	use_gpio.c	60;"	function	signature:(u8 ON_OFF)
+ctrl_led17	use_gpio.h	8;"	prototype	signature:(u8 ON_OFF)
+ctrl_moto1	use_gpio.c	35;"	function	signature:(u8 HIGH_LOW)
+ctrl_moto1	use_gpio.h	6;"	prototype	signature:(u8 HIGH_LOW)
+ctrl_moto2	use_gpio.c	23;"	function	signature:(u8 HIGH_LOW)
+ctrl_moto2	use_gpio.h	5;"	prototype	signature:(u8 HIGH_LOW)
+ctrl_power	use_gpio.c	72;"	function	signature:(u8 ON_OFF)
+ctrl_power	use_gpio.h	9;"	prototype	signature:(u8 ON_OFF)
+ctrl_touch_power	use_gpio.c	84;"	function	signature:(u8 ON_OFF)
+ctrl_touch_power	use_gpio.h	10;"	prototype	signature:(u8 ON_OFF)
 disableInterrupts	lib_stm8\inc\stm8s.h	2602;"	macro
 disableInterrupts	lib_stm8\inc\stm8s.h	2611;"	macro
 disableInterrupts	lib_stm8\inc\stm8s.h	2621;"	macro

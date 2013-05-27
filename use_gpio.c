@@ -12,19 +12,19 @@ void gpio_init(void)
     GPIO_Init(MOTO2_PORT	 ,(GPIO_Pin_TypeDef)MOTO2_PIN,GPIO_MODE_OUT_PP_HIGH_FAST);
     GPIO_Init(CTRL_PWR_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_PIN,GPIO_MODE_OUT_PP_HIGH_FAST);
     GPIO_Init(CTRL_TOUCH_PORT,(GPIO_Pin_TypeDef)CTRL_TOUCH_PIN,GPIO_MODE_OUT_PP_HIGH_FAST);
-
+    GPIO_Init(CTRL_PWR_CARD_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_CARD_PIN,GPIO_MODE_OUT_PP_HIGH_FAST);
 
 //GPIO ‰»Î≥ı ºªØ
     GPIO_Init(KIN0_PORT,(GPIO_Pin_TypeDef)KIN0_PIN,GPIO_MODE_IN_FL_IT);
 }
 
-void 
+ 
 
 void ctrl_moto2(u8 HIGH_LOW)
 {
     if(HIGH_LOW == HIGH)
     {
-        GPIO_WriteHigh(MOTO2_PORT,(GPIO_Pin_TypeDef)MOTO2_PIN;
+        GPIO_WriteHigh(MOTO2_PORT,(GPIO_Pin_TypeDef)MOTO2_PIN);
     }
     else
     {
@@ -73,10 +73,48 @@ void ctrl_power(u8 ON_OFF)
 {
     if(ON_OFF==ON)
     {
-        GPIO_WriteHigh ();
+        GPIO_WriteHigh (CTRL_PWR_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_PIN);
     }
     else
     {
-        GPIO_WriteLow ();
+        GPIO_WriteLow (CTRL_PWR_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_PIN);
     }
 }
+
+void ctrl_touch_power(u8 ON_OFF)
+{
+    if(ON_OFF==ON)
+    {
+        GPIO_WriteHigh(CTRL_TOUCH_PORT,(GPIO_Pin_TypeDef)CTRL_TOUCH_PIN);
+    }
+    else
+    {
+        GPIO_WriteLow(CTRL_TOUCH_PORT,(GPIO_Pin_TypeDef)CTRL_TOUCH_PIN);
+    }
+}
+
+void ctrl_card_power(u8 ON_OFF)
+{
+    if(ON_OFF==ON)
+    {
+        GPIO_WriteHigh(CTRL_PWR_CARD_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_CARD_PIN);
+    }
+    else
+    {
+        GPIO_WriteLow(CTRL_PWR_CARD_PORT,(GPIO_Pin_TypeDef)CTRL_PWR_CARD_PIN);
+    }
+}
+
+void ctrl_led_power(u8 ON_OFF)
+{
+    if(ON_OFF==ON)
+    {
+        GPIO_WriteHigh(CTRL_LED_PORT,(GPIO_Pin_TypeDef)CTRL_LED_PIN);
+    }
+    else
+    {
+        GPIO_WriteLow(CTRL_LED_PORT,(GPIO_Pin_TypeDef)CTRL_LED_PIN);
+    }
+}
+
+

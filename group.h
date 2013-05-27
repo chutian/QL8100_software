@@ -44,6 +44,7 @@ typedef unsigned int    BOOL;
 #include "public.h"
 #include "use_gpio.h"
 #include "use_uart.h"
+#include "use_i2c.h"
 
 
 

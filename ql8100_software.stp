@@ -402,6 +402,11 @@ Next=Root.Source Files.stm8s_it.c
 [Root.Source Files.stm8s_it.c]
 ElemType=File
 PathName=stm8s_it.c
+Next=Root.Source Files.use_i2c.c
+
+[Root.Source Files.use_i2c.c]
+ElemType=File
+PathName=use_i2c.c
 Next=Root.Source Files.use_uart.c
 
 [Root.Source Files.use_uart.c]
@@ -609,6 +614,11 @@ Next=Root.Include Files.use_gpio.c
 [Root.Include Files.use_gpio.c]
 ElemType=File
 PathName=use_gpio.c
+Next=Root.Include Files.use_i2c.h
+
+[Root.Include Files.use_i2c.h]
+ElemType=File
+PathName=use_i2c.h
 Next=Root.Include Files.use_uart.h
 
 [Root.Include Files.use_uart.h]
