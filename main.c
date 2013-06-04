@@ -35,7 +35,8 @@ void main(void)
 		disableInterrupts();			//关中断
     /* Clock configuration -----------------------------------------*/
     CLK_Config();
-    hardware_init();
+    hardware_init();        //初始化硬件相关
+    software_init();        //初始化软件相关
 
     /* GPIO Configuration ------------------------------------------*/
     //GPIO_Config();

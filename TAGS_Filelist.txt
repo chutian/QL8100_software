@@ -20,6 +20,8 @@ main.c
 public.c
 stm8_interrupt_vector.c
 stm8s_it.c
+use_flash.c
+use_i2c.c
 use_uart.c
 lib_stm8\inc\stm8s_adc1.h
 lib_stm8\inc\stm8s_awu.h
@@ -45,7 +47,10 @@ lib_stm8\inc\stm8s.h
 public.h
 stm8s_conf.h
 stm8s_it.h
+use_flash.h
 use_gpio.c
+use_i2c.h
 use_uart.h
 d:\stmicroelectronics\cosmic\cxstm8\hstm8\mods0.h
+ts12_touch.h
 use_gpio.h

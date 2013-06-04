@@ -512,7 +512,7 @@ CLK_ClockSwitchCmd	lib_stm8\src\stm8s_clk.c	218;"	function	signature:(Functional
 CLK_ClockSwitchConfig	lib_stm8\inc\stm8s_clk.h	355;"	prototype	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
 CLK_ClockSwitchConfig	lib_stm8\src\stm8s_clk.c	319;"	function	signature:(CLK_SwitchMode_TypeDef CLK_SwitchMode, CLK_Source_TypeDef CLK_NewClock, FunctionalState ITState, CLK_CurrentClockState_TypeDef CLK_CurrentClockState)
 CLK_Config	main.c	21;"	prototype	file:	signature:(void)
-CLK_Config	main.c	64;"	function	file:	signature:(void)
+CLK_Config	main.c	68;"	function	file:	signature:(void)
 CLK_CurrentClockState_TypeDef	lib_stm8\inc\stm8s_clk.h	50;"	typedef	typeref:enum:__anon12
 CLK_DeInit	lib_stm8\inc\stm8s_clk.h	346;"	prototype	signature:(void)
 CLK_DeInit	lib_stm8\src\stm8s_clk.c	66;"	function	signature:(void)
@@ -771,7 +771,7 @@ DRL	lib_stm8\inc\stm8s.h	310;"	member	struct:ADC1_struct
 DRL	lib_stm8\inc\stm8s.h	381;"	member	struct:ADC2_struct
 DTR	lib_stm8\inc\stm8s.h	628;"	member	struct:TIM1_struct
 DUKR	lib_stm8\inc\stm8s.h	1510;"	member	struct:FLASH_struct
-Delay	main.c	172;"	function	signature:(uint16_t nCount)
+Delay	main.c	176;"	function	signature:(uint16_t nCount)
 Delay	main.c	23;"	prototype	file:	signature:(uint16_t nCount)
 ECKR	lib_stm8\inc\stm8s.h	495;"	member	struct:CLK_struct
 EEPROM	lib_stm8\inc\stm8s.h	115;"	macro
@@ -1054,7 +1054,7 @@ GPIOI_BaseAddress	lib_stm8\inc\stm8s.h	2455;"	macro
 GPIO_CR1_RESET_VALUE	lib_stm8\inc\stm8s.h	269;"	macro
 GPIO_CR2_RESET_VALUE	lib_stm8\inc\stm8s.h	270;"	macro
 GPIO_Config	main.c	22;"	prototype	file:	signature:(void)
-GPIO_Config	main.c	76;"	function	file:	signature:(void)
+GPIO_Config	main.c	80;"	function	file:	signature:(void)
 GPIO_DDR_RESET_VALUE	lib_stm8\inc\stm8s.h	268;"	macro
 GPIO_DeInit	lib_stm8\inc\stm8s_gpio.h	133;"	prototype	signature:(GPIO_TypeDef* GPIOx)
 GPIO_DeInit	lib_stm8\src\stm8s_gpio.c	47;"	function	signature:(GPIO_TypeDef* GPIOx)
@@ -1120,10 +1120,14 @@ I2C_ACK_NEXT	lib_stm8\inc\stm8s_i2c.h	51;"	enumerator	enum:__anon34
 I2C_ACK_NONE	lib_stm8\inc\stm8s_i2c.h	49;"	enumerator	enum:__anon34
 I2C_ADDMODE_10BIT	lib_stm8\inc\stm8s_i2c.h	60;"	enumerator	enum:__anon35
 I2C_ADDMODE_7BIT	lib_stm8\inc\stm8s_i2c.h	59;"	enumerator	enum:__anon35
+I2C_AF_ERR	use_i2c.h	18;"	macro
+I2C_Ack	use_i2c.h	8;"	macro
 I2C_Ack_TypeDef	lib_stm8\inc\stm8s_i2c.h	52;"	typedef	typeref:enum:__anon34
 I2C_AcknowledgeConfig	lib_stm8\inc\stm8s_i2c.h	509;"	prototype	signature:(I2C_Ack_TypeDef Ack)
 I2C_AcknowledgeConfig	lib_stm8\src\stm8s_i2c.c	343;"	function	signature:(I2C_Ack_TypeDef Ack)
 I2C_AddMode_TypeDef	lib_stm8\inc\stm8s_i2c.h	61;"	typedef	typeref:enum:__anon35
+I2C_BERR_ERR	use_i2c.h	17;"	macro
+I2C_BTF	use_i2c.h	15;"	macro
 I2C_BaseAddress	lib_stm8\inc\stm8s.h	2465;"	macro
 I2C_CCRH_CCR	lib_stm8\inc\stm8s.h	1406;"	macro
 I2C_CCRH_DUTY	lib_stm8\inc\stm8s.h	1405;"	macro
@@ -1240,6 +1244,7 @@ I2C_MAX_FAST_FREQ	lib_stm8\inc\stm8s_i2c.h	330;"	macro
 I2C_MAX_INPUT_FREQ	lib_stm8\inc\stm8s_i2c.h	332;"	macro
 I2C_MAX_INPUT_FREQ	lib_stm8\inc\stm8s_i2c.h	334;"	macro
 I2C_MAX_STANDARD_FREQ	lib_stm8\inc\stm8s_i2c.h	329;"	macro
+I2C_NAck	use_i2c.h	9;"	macro
 I2C_OARH_ADD	lib_stm8\inc\stm8s.h	1375;"	macro
 I2C_OARH_ADDCONF	lib_stm8\inc\stm8s.h	1374;"	macro
 I2C_OARH_ADDMODE	lib_stm8\inc\stm8s.h	1373;"	macro
@@ -1250,6 +1255,8 @@ I2C_OARL_RESET_VALUE	lib_stm8\inc\stm8s.h	1339;"	macro
 I2C_PORT	hardware_port.h	86;"	macro
 I2C_ReceiveData	lib_stm8\inc\stm8s_i2c.h	512;"	prototype	signature:(void)
 I2C_ReceiveData	lib_stm8\src\stm8s_i2c.c	428;"	function	signature:(void)
+I2C_RxNeask	use_i2c.h	14;"	macro
+I2C_SBask	use_i2c.h	12;"	macro
 I2C_SCL_PIN	hardware_port.h	91;"	macro
 I2C_SCL_PORT	hardware_port.h	90;"	macro
 I2C_SDA_PIN	hardware_port.h	88;"	macro
@@ -1283,8 +1290,14 @@ I2C_StretchClockCmd	lib_stm8\inc\stm8s_i2c.h	508;"	prototype	signature:(Function
 I2C_StretchClockCmd	lib_stm8\src\stm8s_i2c.c	318;"	function	signature:(FunctionalState NewState)
 I2C_TRISER_RESET_VALUE	lib_stm8\inc\stm8s.h	1348;"	macro
 I2C_TRISER_TRISE	lib_stm8\inc\stm8s.h	1408;"	macro
+I2C_TxEask	use_i2c.h	13;"	macro
 I2C_TypeDef	lib_stm8\inc\stm8s.h	1330;"	typedef	typeref:struct:I2C_struct
+I2C_addrask	use_i2c.h	11;"	macro
+I2C_busy	use_i2c.h	4;"	macro
+I2C_start	use_i2c.h	5;"	macro
+I2C_stop	use_i2c.h	6;"	macro
 I2C_struct	lib_stm8\inc\stm8s.h	1312;"	struct
+I2C_writebyte	use_i2c.h	20;"	macro
 IAPSR	lib_stm8\inc\stm8s.h	1505;"	member	struct:FLASH_struct
 ICKR	lib_stm8\inc\stm8s.h	494;"	member	struct:CLK_struct
 ICR	lib_stm8\inc\stm8s.h	1684;"	member	struct:SPI_struct
@@ -1628,7 +1641,7 @@ LER_PIN	hardware_port.h	17;"	macro
 LER_PORT	hardware_port.h	16;"	macro
 LOW	group.h	38;"	macro
 LSIMeasurment	main.c	24;"	prototype	file:	signature:(void)
-LSIMeasurment	main.c	89;"	function	signature:(void)
+LSIMeasurment	main.c	93;"	function	signature:(void)
 LSI_FREQUENCY_MAX	lib_stm8\inc\stm8s_awu.h	71;"	macro
 LSI_FREQUENCY_MAX	lib_stm8\inc\stm8s_beep.h	58;"	macro
 LSI_FREQUENCY_MIN	lib_stm8\inc\stm8s_awu.h	70;"	macro
@@ -3030,6 +3043,26 @@ TPR	lib_stm8\inc\stm8s.h	2055;"	member	struct:__anon142
 TRAP_IRQHandler	stm8s_it.h	39;"	prototype	signature:(void)
 TRISER	lib_stm8\inc\stm8s.h	1327;"	member	struct:I2C_struct
 TRUE	lib_stm8\inc\stm8s.h	219;"	enumerator	enum:__anon138
+TS12_ADD_VDD	ts12_touch.h	4;"	macro
+TS12_CAL_HOLD1	ts12_touch.h	25;"	macro
+TS12_CAL_HOLD2	ts12_touch.h	26;"	macro
+TS12_CH_HOLD1	ts12_touch.h	23;"	macro
+TS12_CH_HOLD2	ts12_touch.h	24;"	macro
+TS12_CTRL1	ts12_touch.h	17;"	macro
+TS12_CTRL2	ts12_touch.h	18;"	macro
+TS12_OUT1	ts12_touch.h	28;"	macro
+TS12_OUT2	ts12_touch.h	29;"	macro
+TS12_OUT3	ts12_touch.h	30;"	macro
+TS12_READ	ts12_touch.h	8;"	macro
+TS12_REF1	ts12_touch.h	20;"	macro
+TS12_REF2	ts12_touch.h	21;"	macro
+TS12_SEN1	ts12_touch.h	10;"	macro
+TS12_SEN2	ts12_touch.h	11;"	macro
+TS12_SEN3	ts12_touch.h	12;"	macro
+TS12_SEN4	ts12_touch.h	13;"	macro
+TS12_SEN5	ts12_touch.h	14;"	macro
+TS12_SEN6	ts12_touch.h	15;"	macro
+TS12_WRITE	ts12_touch.h	7;"	macro
 TSR	lib_stm8\inc\stm8s.h	2054;"	member	struct:__anon142
 TXCRCR	lib_stm8\inc\stm8s.h	1689;"	member	struct:SPI_struct
 TxMailbox	lib_stm8\inc\stm8s.h	2082;"	member	union:__anon142::__anon143	typeref:struct:__anon142::__anon143::__anon144
@@ -3406,11 +3439,13 @@ __STM8S_TIM3_H	lib_stm8\inc\stm8s_tim3.h	24;"	macro
 __STM8S_TIM4_H	lib_stm8\inc\stm8s_tim4.h	24;"	macro
 __STM8S_UART2_H	lib_stm8\inc\stm8s_uart2.h	24;"	macro
 __STM8S_WWDG_H	lib_stm8\inc\stm8s_wwdg.h	24;"	macro
+__TS12_TOUCH_H	ts12_touch.h	2;"	macro
 __USE_GPIO_H	use_gpio.h	2;"	macro
+__USE_I2C_H_	use_i2c.h	2;"	macro
 __USE_UART_H	use_uart.h	2;"	macro
 _stext	stm8s_it.h	34;"	prototype	signature:(void)
 _vectab	stm8_interrupt_vector.c	14;"	variable
-assert_failed	main.c	190;"	function	signature:(uint8_t* file, uint32_t line)
+assert_failed	main.c	194;"	function	signature:(uint8_t* file, uint32_t line)
 assert_failed	stm8s_conf.h	99;"	prototype	signature:(uint8_t* file, uint32_t line)
 assert_param	stm8s_conf.h	101;"	macro
 assert_param	stm8s_conf.h	97;"	macro
@@ -3421,6 +3456,7 @@ ctrl_led16	use_gpio.c	48;"	function	signature:(u8 ON_OFF)
 ctrl_led16	use_gpio.h	7;"	prototype	signature:(u8 ON_OFF)
 ctrl_led17	use_gpio.c	60;"	function	signature:(u8 ON_OFF)
 ctrl_led17	use_gpio.h	8;"	prototype	signature:(u8 ON_OFF)
+ctrl_led_power	use_gpio.c	108;"	function	signature:(u8 ON_OFF)
 ctrl_moto1	use_gpio.c	35;"	function	signature:(u8 HIGH_LOW)
 ctrl_moto1	use_gpio.h	6;"	prototype	signature:(u8 HIGH_LOW)
 ctrl_moto2	use_gpio.c	23;"	function	signature:(u8 HIGH_LOW)
@@ -3444,6 +3480,19 @@ halt	lib_stm8\inc\stm8s.h	2617;"	macro
 halt	lib_stm8\inc\stm8s.h	2627;"	macro
 hardware_init	public.c	3;"	function	signature:(void)
 hardware_init	public.h	5;"	prototype	signature:(void)
+i2c_init	use_i2c.c	2;"	function	signature:(void)
+i2c_init	use_i2c.h	22;"	prototype	signature:(void)
+i2c_rcvDat	use_i2c.c	36;"	function	signature:(void)
+i2c_rcvDat	use_i2c.h	26;"	prototype	signature:(void)
+i2c_readAbit	use_i2c.h	28;"	prototype	signature:(u8 addr)
+i2c_sendDAdr	use_i2c.c	21;"	function	signature:(u8 Add)
+i2c_sendDAdr	use_i2c.h	24;"	prototype	signature:(u8 Add)
+i2c_sendDat	use_i2c.c	29;"	function	signature:(u8 data)
+i2c_sendDat	use_i2c.h	25;"	prototype	signature:(u8 data)
+i2c_start	use_i2c.c	14;"	function	signature:(void)
+i2c_start	use_i2c.h	23;"	prototype	signature:(void)
+i2c_writeAbit	use_i2c.h	27;"	prototype	signature:(u8 addr,u8 data)
+initTs12ic	ts12_touch.h	34;"	prototype	signature:(void)
 int16_t	lib_stm8\inc\stm8s.h	200;"	typedef
 int32_t	lib_stm8\inc\stm8s.h	201;"	typedef
 int8_t	lib_stm8\inc\stm8s.h	199;"	typedef
@@ -3455,6 +3504,7 @@ main	main.c	32;"	function	signature:(void)
 nop	lib_stm8\inc\stm8s.h	2605;"	macro
 nop	lib_stm8\inc\stm8s.h	2614;"	macro
 nop	lib_stm8\inc\stm8s.h	2624;"	macro
+readTouchTs12Ic	ts12_touch.h	35;"	prototype	signature:(void)
 rim	lib_stm8\inc\stm8s.h	2603;"	macro
 rim	lib_stm8\inc\stm8s.h	2612;"	macro
 rim	lib_stm8\inc\stm8s.h	2622;"	macro
@@ -3464,7 +3514,10 @@ s8	lib_stm8\inc\stm8s.h	212;"	typedef
 sim	lib_stm8\inc\stm8s.h	2604;"	macro
 sim	lib_stm8\inc\stm8s.h	2613;"	macro
 sim	lib_stm8\inc\stm8s.h	2623;"	macro
+software_init	public.c	11;"	function	signature:(void)
 software_init	public.h	4;"	prototype	signature:(void)
+touchReadRegByte	ts12_touch.h	33;"	prototype	signature:(UINT8 bRegIndex,UINT8 *pData)
+touchWriteRegByte	ts12_touch.h	32;"	prototype	signature:(UINT8 bRegIndex,UINT8 bData)
 trap	lib_stm8\inc\stm8s.h	2606;"	macro
 trap	lib_stm8\inc\stm8s.h	2615;"	macro
 trap	lib_stm8\inc\stm8s.h	2625;"	macro

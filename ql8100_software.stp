@@ -402,6 +402,21 @@ Next=Root.Source Files.stm8s_it.c
 [Root.Source Files.stm8s_it.c]
 ElemType=File
 PathName=stm8s_it.c
+Next=Root.Source Files.ts12_touch.c
+
+[Root.Source Files.ts12_touch.c]
+ElemType=File
+PathName=ts12_touch.c
+Next=Root.Source Files.use_flash.c
+
+[Root.Source Files.use_flash.c]
+ElemType=File
+PathName=use_flash.c
+Next=Root.Source Files.use_gpio.c
+
+[Root.Source Files.use_gpio.c]
+ElemType=File
+PathName=use_gpio.c
 Next=Root.Source Files.use_i2c.c
 
 [Root.Source Files.use_i2c.c]
@@ -609,11 +624,21 @@ Next=Root.Include Files.stm8s_it.h
 [Root.Include Files.stm8s_it.h]
 ElemType=File
 PathName=stm8s_it.h
-Next=Root.Include Files.use_gpio.c
+Next=Root.Include Files.ts12_touch.h
 
-[Root.Include Files.use_gpio.c]
+[Root.Include Files.ts12_touch.h]
 ElemType=File
-PathName=use_gpio.c
+PathName=ts12_touch.h
+Next=Root.Include Files.use_flash.h
+
+[Root.Include Files.use_flash.h]
+ElemType=File
+PathName=use_flash.h
+Next=Root.Include Files.use_gpio.h
+
+[Root.Include Files.use_gpio.h]
+ElemType=File
+PathName=use_gpio.h
 Next=Root.Include Files.use_i2c.h
 
 [Root.Include Files.use_i2c.h]

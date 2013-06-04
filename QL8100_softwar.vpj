@@ -199,6 +199,8 @@
 			<F N="Debug/stm8s_wwdg.o"/>
 			<F N="Debug/use_gpio.ls"/>
 			<F N="Debug/use_gpio.o"/>
+			<F N="Debug/use_i2c.ls"/>
+			<F N="Debug/use_i2c.o"/>
 			<F N="Debug/use_uart.ls"/>
 			<F N="Debug/use_uart.o"/>
 		</Folder>
@@ -288,6 +290,8 @@
 		<F N="stm8s_it.h"/>
 		<F N="TAGS.txt"/>
 		<F N="TAGS_Filelist.txt"/>
+		<F N="ts12_touch.c"/>
+		<F N="ts12_touch.h"/>
 		<F N="use_gpio.c"/>
 		<F N="use_gpio.h"/>
 		<F N="use_i2c.c"/>
