@@ -117,4 +117,4 @@ void ctrl_led_power(u8 ON_OFF)
     }
 }
 
-while(1);
+
